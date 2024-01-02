@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+main{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background-color: black;
+    color: white;
+    height: 500px;
+    width: 250px;
+    
+}
+
+.first{
+    /* background-color: white; */
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.display{
+    height: 50px;
+    width: 100%;
+    font-size: 2em;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.second{
+    /* background-color: red; */
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    height: 52px;
+    width: 52px;
+    margin: 5px;
+    border-radius: 50px;
+    font-size: 1.4em;
+}
+
+.zero{
+    width: 112px;
+    border: none;
+    outline: none;
+    background-color: rgb(68, 67, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.color{
+    border: none;
+    outline: none;
+    background-color: rgb(68, 67, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.orange{
+    border: none;
+    outline: none;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.light-gray{
+    border: none;
+    outline: none;
+    background-color: rgb(178, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

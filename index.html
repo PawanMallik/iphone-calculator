@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="first">
+                <input type="text" class="display" readonly>
+            </div>
+
+            <div class="second">
+                <button class="light-gray" id="AC" onclick="
+                    currentDisplay='';
+                document.querySelector('.display').value=currentDisplay;
+                    ">AC</button>
+                <button class="light-gray" id="-">+/-</button>
+                <button class="light-gray " id="%" onclick="
+                currentDisplay=currentDisplay+'%';
+                document.querySelector('.display').value=currentDisplay;
+                ">%</button>
+                <button class="orange" id="/" oncanplay="
+                currentDisplay=currentDisplay+'/';
+                document.querySelector('.display').value=currentDisplay;
+                ">/</button>
+                <button class="color" id="7" onclick="
+                currentDisplay=currentDisplay+'7';
+                document.querySelector('.display').value=currentDisplay;
+                ">7</button>
+                <button class="color" id="8" onclick="
+                currentDisplay=currentDisplay+'8';
+                document.querySelector('.display').value=currentDisplay;
+                ">8</button>
+                <button class="color" id="9" onclick="
+                currentDisplay=currentDisplay+'9';
+                document.querySelector('.display').value=currentDisplay;
+                ">9</button>
+                <button class="orange" id="*" onclick="
+                currentDisplay=currentDisplay+'*';
+                document.querySelector('.display').value=currentDisplay;
+                ">*</button>
+                <button class="color" id="4" onclick="
+                currentDisplay=currentDisplay+'4';
+                document.querySelector('.display').value=currentDisplay;
+                ">4</button>
+                <button class="color" id="5" onclick="
+                currentDisplay=currentDisplay+'5';
+                document.querySelector('.display').value=currentDisplay;
+                ">5</button>
+                <button class="color" id="6" onclick="
+                currentDisplay=currentDisplay+'6';
+                document.querySelector('.display').value=currentDisplay;
+                ">6</button>
+                <button class="orange" id="-" onclick="
+                currentDisplay=currentDisplay+'-';
+                document.querySelector('.display').value=currentDisplay;
+                ">-</button>
+                <button class="color" id="1" onclick="
+                currentDisplay = currentDisplay + '1';
+                document.querySelector('.display').value = currentDisplay;
+                ">1</button>
+                <button class="color" id="2" onclick="
+                currentDisplay=currentDisplay+'2';
+                document.querySelector('.display').value=currentDisplay;
+                ">2</button>
+                <button class="color" id="3" onclick="
+                currentDisplay=currentDisplay+'3';
+                document.querySelector('.display').value=currentDisplay;
+                ">3</button>
+                <button class="orange" id="+" onclick="
+                currentDisplay=currentDisplay+'+';
+                document.querySelector('.display').value=currentDisplay;
+                ">+</button>
+                <button class="zero" id="0" onclick="
+                currentDisplay=currentDisplay+'0';
+                document.querySelector('.display').value=currentDisplay;
+                ">0</button>
+                <button class="color" id="." onclick="
+                currentDisplay=currentDisplay+'.';
+                document.querySelector('.display').value=currentDisplay;
+                ">.</button>
+                <button class="orange" id="=" onclick="
+                let result = eval(currentDisplay)
+                currentDisplay=result;
+                document.querySelector('.display').value=currentDisplay;
+                ">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let currentDisplay = '';
+        document.querySelector('.display').value = currentDisplay;
+
+    </script>
+</body>
+
+</html>
